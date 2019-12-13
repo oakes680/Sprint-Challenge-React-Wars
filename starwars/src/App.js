@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import StarGrid from './components/StarGrid'
+import { BigContainer } from './components/Styles'
+import { Button} from 'reactstrap';
 
 
 const App = () => {
@@ -13,8 +15,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <BigContainer>
       <h1 className="Header">React Wars</h1>
+      <Button color="primary">Next</Button>
       <StarGrid/>
+      </BigContainer>
     </div>
   );
 }
