@@ -17,7 +17,7 @@ const App = () => {
     <div className="App">
       <BigContainer>
       <h1 className="Header">React Wars</h1>
-      <Button color="primary">Next</Button>
+      
       <StarGrid/>
       </BigContainer>
     </div>

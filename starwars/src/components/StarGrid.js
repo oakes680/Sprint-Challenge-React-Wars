@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import StarCard from './StarCard'
-import { Container, Entry } from './Styles'
+import { Container, Entry, Button2 } from './Styles'
 import { Button} from 'reactstrap';
 
 export default function StarGrid() {
@@ -26,7 +26,8 @@ export default function StarGrid() {
     return (
         
         <Entry>
-            <Button onClick={() => setStarApi(starApi + 1)} color="primary">Next2</Button>
+            
+            <Button2 onClick={() => setStarApi(1)} color="primary">Back to Start</Button2>
             {starChar.map((item, index) => {
                 return (
                     <Container>
@@ -34,6 +35,7 @@ export default function StarGrid() {
                     </Container>
                 )
             })}
+            <Button2 onClick={() => setStarApi(starApi + 1)} color="primary">Next</Button2>
         </Entry>
 
 

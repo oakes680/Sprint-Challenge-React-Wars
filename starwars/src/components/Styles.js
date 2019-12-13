@@ -15,4 +15,11 @@ export const BigContainer = styled.div `
  margin: 0 auto;
 `
 
+export const Button2 = styled.button `
+max-height: 220px;
+width:250px;
+margin-top: 24px;
+font-size: 30px;
+`
+
 
