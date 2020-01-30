@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import StarGrid from './components/StarGrid'
+import { BigContainer } from './components/Styles'
+import { Button} from 'reactstrap';
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +15,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <BigContainer>
       <h1 className="Header">React Wars</h1>
+      
+      <StarGrid/>
+      </BigContainer>
     </div>
   );
 }
